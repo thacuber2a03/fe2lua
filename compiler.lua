@@ -42,6 +42,7 @@ end
 
 function Compiler:compileStatement(statement)
     if statement.name == "fn" then return self:compileFunction(statement) end
+    if statement.name == "mac" then error "I've got no idea how would I compile a macro in Lua" end
 
     local op = statement.operation
     local expr1 = statement.exprs[1] and self:compileExpr(statement.exprs[1]) or nil
