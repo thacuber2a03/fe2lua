@@ -1,8 +1,8 @@
-Object    = require 'classic'
-Token     = require 'token'
-Tokenizer = require 'tokenizer'
-Parser    = require 'parser'
-Compiler  = require 'compiler'
+local Object    = require 'classic'
+local Token     = require 'token'
+local Tokenizer = require 'tokenizer'
+local Parser    = require 'parser'
+local Compiler  = require 'compiler'
 
 local fe2lua = {}
 
